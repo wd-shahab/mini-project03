@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@import url("https://fonts.google.com/specimen/Outfit");
+ :root{
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --main-BG: hsl(217, 54%, 11%);
+    --card-BG: hsl(216, 50%, 16%);
+    --lin: hsl(217, 18%, 66%);
+    --White: hsl(0, 0%, 100%);
+ }
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Outfit, calibri;
+    background-color: var(--main-BG);
+}
+.continer{
+    position: relative;
+    width: 320px;
+    height: 554.86px;
+    min-width: 295px;
+    background-color: var(--card-BG);
+    border-radius: 12px;
+}
+div.main-image{
+    background-image: url('./images/image-equilibrium.jpg');
+    background-size: cover;
+    width: 85%;
+    height: 270px;
+    border-radius: 12px;
+    cursor: pointer;
+    margin: 20px auto;
+}
+.text{
+    padding: 0 25.5px;
+}
+.title a{
+    text-decoration: none;
+    color: var(--White);
+    font-weight: 600;
+    font-size: 21.9px;
+    margin-bottom: 10px;
+}
+.info p{
+    color: var(--lin);
+    font-size: 18px;
+}
+.info{
+    margin: 10px 0;
+}
+.eth-history{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--lin);
+    padding: 20px 0;
+}
+.eth-history .ETH::before{
+    content: url("./images/icon-ethereum.svg");
+    margin-right: 9px;
+}
+.eth-history .ETH{
+    color: var(--Cyan);
+    font-weight: 500;
+    font-size: 20px;
+}
+.eth-history .history::before{
+    content: url("./images/icon-clock.svg");
+    margin-right: 2px;
+}
+.eth-history .history{
+    color: var(--lin);
+    font-weight: 500;
+    font-size: 18px;
+}
+.creater{
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+}
+.creater img{
+    width: 35px;
+    border-radius: 100%;
+    border: 1px solid var(--White);
+}
+.creater p{
+    margin-left: 8px;
+    font-size: 18px;
+    color: var(--lin);
+}
+p.name{
+    font-size: 19px;
+    cursor: pointer;
+    color: var(--White);
+}
+.hover:hover{
+    color: var(--Cyan);
+}
+.color span{
+    content: url('./images/icon-view.svg');
+    margin: 110px auto;
+}
+.overly{
+    width: 272px;
+    height: 270px;
+    background-color: hsla(178, 100%, 50%, 0.329);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    opacity: 0;
+}
+.view{
+    content: url(./images/icon-view.svg);
+    width: 50px;
+    height: 50px;
+}
+div.main-image:hover .overly{
+    opacity: 1;
+}
